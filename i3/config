@@ -38,7 +38,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# cumshot
+# screenshot
 bindsym Print exec scrot -s -e 'xclip -selection clipboard -t image/png < $f'
 
 # Use pactl to adjust volume in PulseAudio.
@@ -195,12 +195,12 @@ bar {
 new_window pixel 4
 new_float pixel 4
 
-# Цвета окон под стиль
-client.focused          #5D4E6D #5D4E6D #E8D8C3 #722F37 #E8D8C3
-client.focused_inactive #322D41 #322D41 #E8D8C3 #322D41 #E8D8C3
-client.unfocused        #4A405A #4A405A #E8D8C3 #4A405A #AB9E8E
-client.urgent           #722F37 #722F37 #E8D8C3 #722F37 #E8D8C3
-client.placeholder      #1E1B2E #1E1B2E #E8D8C3 #1E1B2E #E8D8C3
+# Цвета рамок (порядок: border, background, text, indicator, child_border)
+client.focused          #6D4C3D #F8F4E6 #3A3226 #6D4C3D #F8F4E6
+client.focused_inactive #B8A99A #F8F4E6 #3A3226 #B8A99A #F8F4E6
+client.unfocused        #D4C9B8 #F8F4E6 #3A3226 #D4C9B8 #D4C9B8
+client.urgent           #A8333A #F8F4E6 #F8F4E6 #A8333A #F8F4E6
+client.placeholder      #F8F4E6 #F8F4E6 #3A3226 #F8F4E6 #F8F4E6
 
 gaps inner 10
-gaps outer 10
+gaps outer 2
